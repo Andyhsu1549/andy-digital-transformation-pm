@@ -40,8 +40,8 @@ selected_sheet = st.sidebar.selectbox('📁 選擇任務分頁', sheets)
 
 # ✅ 現在可以安全使用 selected_sheet
 st.markdown(f"### 📂 正在查看：**{selected_sheet}**")
-st.writ("")
-st.writ("")
+st.write("")
+st.write("")
 st.markdown("Hi Wilson哥！以下是我的專案進度概覽，一起努力完成目標吧！🔥")
 
 # --- 側邊欄：四大任務總覽 ---
