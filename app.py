@@ -26,7 +26,6 @@ client = gspread.authorize(creds)
 # --- Streamlit 頁面設定 ---
 st.set_page_config(page_title="Andy 的專案進度看板", page_icon="💪")
 st.title('💪 Andy 的專案進度看板')
-st.markdown("Hi Andy！以下是你的專案進度概覽，一起努力完成目標吧！🔥")
 
 # --- 讀取 Google Sheets 分頁 ---
 try:
@@ -38,6 +37,10 @@ except Exception as e:
 
 # --- 側邊欄：分頁選單 ---
 selected_sheet = st.sidebar.selectbox('📁 選擇任務分頁', sheets)
+
+# ✅ 現在可以安全使用 selected_sheet
+st.markdown(f"### 📂 正在查看：**{selected_sheet}**")
+st.markdown("Hi Wilson哥！以下是我的專案進度概覽，一起努力完成目標吧！🔥")
 
 # --- 側邊欄：四大任務總覽 ---
 st.sidebar.markdown("---")
