@@ -46,7 +46,7 @@ st.markdown("Hi Wilson哥！以下是我的專案進度概覽，一起努力完�
 
 # --- 側邊欄：四大任務總覽 ---
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 🗂 四大任務總覽")
+st.sidebar.markdown("### 🗂 任務總覽")
 
 for sheet_name in sheets:
     try:
